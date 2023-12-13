@@ -74,8 +74,6 @@ def filt(strin):
     
     # declare list to hold the tokenized string with no stopwords
     filtered_list = []
-    # split the string into a list
-    #words = strin.split() 
     # convert string into a list of only words, with no special characters
     words = re.findall(r'\b\w+\b', strin.lower())
     for w in words:
