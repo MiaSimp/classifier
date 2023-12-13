@@ -4,6 +4,7 @@ from wordcloud import STOPWORDS
 import nltk
 #nltk.download('stopwords')
 #nltk.download('punkt')
+#nltk.download('stopwords')
 from nltk.corpus import stopwords
 import re
 from collections import defaultdict
@@ -59,8 +60,6 @@ def plot_top_words(word_counts, top_n):
     root.mainloop()
 
 #source for understanding how to use dictionaries https://www.w3schools.com/python/python_dictionaries.asp
-
-nltk.download('stopwords')
 
 def filt(strin):
     # replace difficult to deal with characters in the string 
