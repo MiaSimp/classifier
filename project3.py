@@ -87,9 +87,9 @@ newDF = pd.read_csv('HuluRaw.csv')
 
 # select the necessary columns from the dataset
 newDF = newDF[['show/canonical_name', 'show/description', 'show/genre']].copy()
+
 # drop duplicate columns and reset indexes
 newDF = newDF.drop_duplicates('show/canonical_name', keep='last', ignore_index =True)
-#newDF.reset_index()
 
 # rename columns
 newDF.columns = ['Show Name', 'Description', 'Genre']
