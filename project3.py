@@ -4,7 +4,6 @@ from wordcloud import STOPWORDS
 import nltk
 #nltk.download('stopwords')
 #nltk.download('punkt')
-#nltk.download('stopwords')
 from nltk.corpus import stopwords
 import re
 from collections import defaultdict
