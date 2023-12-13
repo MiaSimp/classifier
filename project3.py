@@ -114,13 +114,13 @@ trainData.reset_index(drop=True, inplace=True)
 # read in stopwords
 f = open("stopwords.txt", encoding="utf8")
 stri= ""    
+
 for line in f:
     stri+=line 
 # split the string of stopwords and convert it into list
 x = stri.split()   
 f.close()
 # declare set of stopwords and update it with the txt file stopwords
-stopwords = nltk.corpus.stopwords.words('english')
 stopwords = set(STOPWORDS)
 stopwords.update(x)
 
