@@ -2,8 +2,6 @@
 import pandas as pd
 from wordcloud import STOPWORDS
 import nltk
-#nltk.download('stopwords')
-#nltk.download('punkt')
 from nltk.corpus import stopwords
 import re
 from collections import defaultdict
@@ -11,8 +9,8 @@ import matplotlib.pyplot as plt
 import tkinter as tk
 from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-
-
+#nltk.download('stopwords')
+#nltk.download('punkt')
 
 
 # function to plot histograms for top words in each genre
